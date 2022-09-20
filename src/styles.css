@@ -1,0 +1,89 @@
+.root {
+  width: 850px;
+  height: 1150px;
+  border: solid;
+}
+
+.botao {
+  display: inline-block;
+  margin-left: 125px;
+  margin-right: 50px;
+  margin-top: 50px;
+  margin-bottom: 5px;
+  align-items: center;
+  color: red;
+}
+
+.botao18 {
+  display: inline-block;
+  margin-left: 50px;
+  margin-top: 50px;
+  margin-right: 50px;
+  margin-bottom: 5px;
+  align-items: center;
+}
+.jsonBt {
+  display: inline-block;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-bottom: 5px;
+  align-items: center;
+}
+
+.label {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  align-items: center;
+}
+
+.tabela {
+  margin: 25px;
+  align-items: center;
+  width: 800px;
+  height: 600px;
+  overflow: auto;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.tabela table,
+td,
+th {
+  border: 1px solid;
+  border-collapse: collapse;
+}
+
+.celula {
+  width: 180px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.mostrar {
+  display: inline-block;
+  margin: 25px;
+  align-items: center;
+}
+.esconder {
+  display: none;
+  margin: 25px;
+  align-items: center;
+}
+
+.contador {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-right: 50px;
+  display: inline-block;
+}
+
+.btExcluir {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  border: none;
+}
