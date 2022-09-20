@@ -35,17 +35,19 @@ const Formulario18 = (props) => {
   };
 
   const adicionar18 = () => {
-    for (let i = 1; i <= form18.quantidade; i++) {
-      props.setListaDeEntradas((atual) => [
-        ...atual,
-        {
-          nome: form18.nome,
-          idade: form18.idade,
-          data: form18.data
-        }
-      ]);
+    if (form18.nome !== "" && form18.data !== "") {
+      for (let i = 1; i <= form18.quantidade; i++) {
+        props.setListaDeEntradas((atual) => [
+          ...atual,
+          {
+            nome: form18.nome,
+            idade: form18.idade,
+            data: form18.data
+          }
+        ]);
+      }
+      setForm18(estadoInicial18);
     }
-    setForm18(estadoInicial18);
   };
 
   return (
