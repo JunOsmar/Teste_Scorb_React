@@ -42,17 +42,19 @@ const Formulario = (props) => {
   };
 
   const adicionar = () => {
-    for (let i = 1; i <= form.quantidade; i++) {
-      props.setListaDeEntradas((atual) => [
-        ...atual,
-        {
-          nome: form.nome,
-          idade: form.idade,
-          data: form.data
-        }
-      ]);
+    if (form.nome !== "" && form.idade !== "" && form.data !== "") {
+      for (let i = 1; i <= form.quantidade; i++) {
+        props.setListaDeEntradas((atual) => [
+          ...atual,
+          {
+            nome: form.nome,
+            idade: form.idade,
+            data: form.data
+          }
+        ]);
+      }
+      setForm(estadoInicial);
     }
-    setForm(estadoInicial);
   };
 
   return (
@@ -110,7 +112,6 @@ const Formulario = (props) => {
           />
         </div>
       </form>
-    
 
       {/* Botão para adicionar as informações. */}
       <div className="label">
