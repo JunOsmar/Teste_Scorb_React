@@ -59,7 +59,7 @@ const Tabela = (props) => {
                 <td
                   className="celula"
                   style={
-                    item.nome.toLowerCase() === props.nomeFiltrado
+                    item.nome.toLowerCase().includes(props.nomeFiltrado)
                       ? { backgroundColor: "yellow" }
                       : {}
                   }
