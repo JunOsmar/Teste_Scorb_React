@@ -34,7 +34,7 @@ const Filtro = (props) => {
         </div>
 
         <div style={{ display: "inline-block" }}>
-          <label for="f_filtro">Filtrar por Nome: </label>
+          <label htmlFor="f_filtro">Filtrar por Nome: </label>
           <input
             type="text"
             id="f_filtro"
