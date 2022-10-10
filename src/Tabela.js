@@ -21,6 +21,7 @@ const Tabela = (props) => {
     props.setListaDeEntradas(lista);
   };
 
+  // Slice
   // mesma funcionalidade porem usando o metodo slice
   // const deletarLinha = (index) => {
   //   const lista = props.listaDeEntradas
