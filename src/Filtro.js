@@ -9,15 +9,13 @@ const Filtro = (props) => {
     setNomeNoFiltro(e.target.value);
   };
 
-  const [filtroAtivo, setFiltroAtivo] = useState(false);
-
   const filtrarNome = () => {
     props.setNomeFiltrado(nomeNoFiltro.toLowerCase());
-    setFiltroAtivo(true);
+    props.setFiltroAtivo(true);
   };
 
   const resetarFiltro = () => {
-    setFiltroAtivo(false);
+    props.setFiltroAtivo(false);
     setNomeNoFiltro("");
     props.setNomeFiltrado("");
   };
@@ -41,7 +39,7 @@ const Filtro = (props) => {
             value={nomeNoFiltro}
             onChange={(e) => handleChange(e)}
             style={
-              nomeNoFiltro !== "" && filtroAtivo === true
+              props.nomeNoFiltro !== "" && props.filtroAtivo === true
                 ? { backgroundColor: "yellow" }
                 : {}
             }
