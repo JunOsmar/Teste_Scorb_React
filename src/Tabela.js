@@ -21,6 +21,7 @@ const Tabela = (props) => {
     props.setListaDeEntradas(lista);
   };
 
+  // Slice
   // mesma funcionalidade porem usando o metodo slice
   // const deletarLinha = (index) => {
   //   const lista = props.listaDeEntradas
@@ -59,7 +60,8 @@ const Tabela = (props) => {
                 <td
                   className="celula"
                   style={
-                    item.nome.toLowerCase().includes(props.nomeFiltrado)
+                    item.nome.toLowerCase().includes(props.nomeFiltrado) &&
+                    props.filtroAtivo === true
                       ? { backgroundColor: "yellow" }
                       : {}
                   }

@@ -11,8 +11,8 @@ export default function App() {
   const [classe2, setClasse2] = useState("esconder");
 
   const [listaDeEntradas, setListaDeEntradas] = useState([]);
-
   const [nomeFiltrado, setNomeFiltrado] = useState();
+  const [filtroAtivo, setFiltroAtivo] = useState(false);
 
   return (
     <div className="root">
@@ -37,12 +37,15 @@ export default function App() {
         listaDeEntradas={listaDeEntradas}
         nomeFiltrado={nomeFiltrado}
         setNomeFiltrado={setNomeFiltrado}
+        setFiltroAtivo={setFiltroAtivo}
+        filtroAtivo={filtroAtivo}
       />
       <Tabela
         listaDeEntradas={listaDeEntradas}
         setListaDeEntradas={setListaDeEntradas}
         nomeFiltrado={nomeFiltrado}
         setNomeFiltrado={setNomeFiltrado}
+        filtroAtivo={filtroAtivo}
       />
     </div>
   );
